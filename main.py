@@ -31,7 +31,7 @@ class Generate(BaseModel):
     Travel_style: str
     Budget: str
     Interests: str
-
+@app.get("/generate")
 @app.post("/generate")
 async def generate(data: Generate):
     user_topic = f"""
